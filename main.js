@@ -10,7 +10,9 @@
             var todo ={
                 item: this.newItem
             };
-            this.todos.push(todo)     
+            this.todos.push(todo);
+            this.newItem ='' 
+
         }
     }
 })
