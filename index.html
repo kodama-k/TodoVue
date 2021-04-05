@@ -1,6 +1,7 @@
+
 <html>
 <head>
-  <title>TODO List</title>
+  <title>Vue.js App</title>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -13,6 +14,13 @@
         Add
         </button>
     </form>
+    <ul>
+      <li v-for="todo in todos">
+        <span>
+          {{todo.item}}
+        </span>
+      </li>
+    </ul>
     <pre>{{$data}}</pre>
 </div>
 <script src = "https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>

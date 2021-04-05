@@ -7,12 +7,12 @@
     methods:{
         addItem:function(){
             // alert();
+            if(this.newItem === '') return;
             var todo ={
                 item: this.newItem
             };
             this.todos.push(todo);
             this.newItem ='' 
-
         }
     }
 })
